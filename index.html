@@ -1544,6 +1544,194 @@ nav{background:rgba(18,0,24,.78)!important;border-bottom:1px solid rgba(255,255,
 .pricing-card p,.problem-card p,.guarantee-box p,.timeline-desc,.final-cta p{color:rgba(255,255,255,.86)!important;}
 @media(max-width:700px){.conversion-trust-strip{grid-template-columns:1fr 1fr!important;margin-inline:14px!important;}.conversion-offer-boost{margin-inline:14px!important;padding:22px!important;}.conversion-offer-grid{grid-template-columns:1fr!important;gap:22px!important;}}
 
+
+
+/* ═════════ HERO FRONT PREMIUM POLISH — FINAL PATCH ═════════ */
+#hero{
+  min-height:100vh!important;
+  padding:8.2rem 1.5rem 4.5rem!important;
+  background:
+    radial-gradient(circle at 50% 22%, rgba(255,255,255,.18), transparent 16%),
+    radial-gradient(circle at 18% 18%, rgba(164,73,187,.55), transparent 32%),
+    radial-gradient(circle at 82% 70%, rgba(164,73,187,.38), transparent 35%),
+    linear-gradient(135deg,#160021 0%,#2b0740 46%,#0d0614 100%)!important;
+  isolation:isolate!important;
+}
+#hero:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  background:
+    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+  background-size:52px 52px;
+  mask-image:radial-gradient(circle at center, black 0%, transparent 72%);
+  opacity:.55;
+}
+.hero-overlay{
+  background:
+    radial-gradient(circle at center, rgba(164,73,187,.10), transparent 42%),
+    linear-gradient(180deg, rgba(10,0,18,.22), rgba(10,0,18,.78))!important;
+  z-index:1!important;
+}
+#shader-canvas{opacity:.55!important;filter:saturate(1.15) contrast(1.05)!important;}
+.hero-premium-orbs{
+  position:absolute!important;
+  inset:0!important;
+  z-index:1!important;
+  pointer-events:none!important;
+  overflow:hidden!important;
+}
+.hero-premium-orbs:before,
+.hero-premium-orbs:after{
+  content:"";
+  position:absolute;
+  width:260px;height:260px;border-radius:50%;
+  background:radial-gradient(circle, rgba(255,255,255,.28), rgba(164,73,187,.18) 35%, transparent 70%);
+  filter:blur(16px);
+  animation:heroOrbDrift 8s ease-in-out infinite alternate;
+}
+.hero-premium-orbs:before{left:8%;top:22%;}
+.hero-premium-orbs:after{right:8%;bottom:14%;animation-delay:1.5s;}
+@keyframes heroOrbDrift{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(28px,-22px,0) scale(1.08)}}
+.hero-content{
+  max-width:980px!important;
+  padding:0 10px!important;
+  transform-style:preserve-3d!important;
+}
+.badge-pill{
+  background:rgba(255,255,255,.10)!important;
+  border:1px solid rgba(255,255,255,.24)!important;
+  box-shadow:0 12px 34px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.18)!important;
+  backdrop-filter:blur(14px)!important;
+  color:#fff!important;
+  font-weight:700!important;
+  letter-spacing:.02em!important;
+}
+.hero-money{
+  width:82px;height:82px;
+  display:inline-grid!important;
+  place-items:center!important;
+  margin:0 auto 1.1rem!important;
+  font-size:3.1rem!important;
+  border-radius:26px!important;
+  background:linear-gradient(145deg,rgba(255,255,255,.22),rgba(255,255,255,.06))!important;
+  border:1px solid rgba(255,255,255,.23)!important;
+  box-shadow:0 22px 60px rgba(0,0,0,.32),0 0 45px rgba(164,73,187,.42)!important;
+  backdrop-filter:blur(16px)!important;
+  animation:moneyBounce 2.6s ease-in-out infinite!important;
+}
+.hero-h1{
+  color:#fff!important;
+  background:linear-gradient(180deg,#ffffff 0%,#ffffff 48%,#efd7ff 76%,#c26bd9 100%)!important;
+  -webkit-background-clip:text!important;
+  background-clip:text!important;
+  -webkit-text-fill-color:transparent!important;
+  font-size:clamp(2.75rem,7vw,5.75rem)!important;
+  line-height:.96!important;
+  letter-spacing:-.065em!important;
+  margin-bottom:1.35rem!important;
+  text-shadow:0 16px 45px rgba(0,0,0,.55)!important;
+  filter:drop-shadow(0 10px 28px rgba(0,0,0,.55))!important;
+}
+.hero-sub.hero-income-line,
+.hero-sub{
+  max-width:760px!important;
+  margin:0 auto 1.25rem!important;
+  padding:16px 22px!important;
+  border-radius:22px!important;
+  background:rgba(255,255,255,.10)!important;
+  border:1px solid rgba(255,255,255,.18)!important;
+  box-shadow:0 16px 44px rgba(0,0,0,.24), inset 0 1px 0 rgba(255,255,255,.14)!important;
+  backdrop-filter:blur(14px)!important;
+  color:rgba(255,255,255,.94)!important;
+  font-size:clamp(1rem,2.1vw,1.25rem)!important;
+  line-height:1.62!important;
+  font-weight:500!important;
+}
+.hero-proof-row{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+  margin:1.15rem auto 1.7rem;
+  animation:fadeUp .9s .32s ease both;
+}
+.hero-proof-row div{
+  min-width:150px;
+  padding:12px 16px;
+  border-radius:18px;
+  background:rgba(255,255,255,.095);
+  border:1px solid rgba(255,255,255,.18);
+  box-shadow:0 14px 36px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.12);
+  backdrop-filter:blur(12px);
+}
+.hero-proof-row strong{
+  display:block;
+  color:#fff;
+  font-size:.98rem;
+  font-weight:900;
+  letter-spacing:-.01em;
+}
+.hero-proof-row span{
+  display:block;
+  color:rgba(255,255,255,.72);
+  font-size:.78rem;
+  margin-top:2px;
+}
+.hero-btns{margin-top:.2rem!important;gap:14px!important;}
+.hero-btns .btn-primary,
+.hero-btns .btn-ghost{
+  min-height:56px!important;
+  padding:1rem 2.15rem!important;
+  font-weight:800!important;
+  letter-spacing:-.01em!important;
+}
+.hero-btns .btn-primary{
+  background:linear-gradient(135deg,#ffffff 0%,#f2d8ff 35%,#a449bb 100%)!important;
+  color:#23002e!important;
+  box-shadow:0 20px 55px rgba(164,73,187,.55), inset 0 1px 0 rgba(255,255,255,.8)!important;
+}
+.hero-btns .btn-ghost{
+  background:rgba(255,255,255,.08)!important;
+  border:1px solid rgba(255,255,255,.28)!important;
+  color:#fff!important;
+  backdrop-filter:blur(12px)!important;
+}
+.guarantee-strip{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  padding:10px 16px!important;
+  border-radius:999px!important;
+  background:rgba(255,255,255,.08)!important;
+  border:1px solid rgba(255,255,255,.15)!important;
+  color:rgba(255,255,255,.82)!important;
+  margin-top:1.25rem!important;
+  font-weight:600!important;
+}
+.lgc-hero-cardfield{z-index:2!important;}
+.lgc-float-card{
+  background:rgba(255,255,255,.11)!important;
+  border:1px solid rgba(255,255,255,.22)!important;
+  box-shadow:0 24px 70px rgba(0,0,0,.32),0 0 42px rgba(164,73,187,.22)!important;
+  backdrop-filter:blur(14px)!important;
+}
+@media(max-width:700px){
+  #hero{padding:7.4rem 1rem 3.2rem!important;min-height:92vh!important;}
+  .hero-h1{font-size:clamp(2.25rem,12vw,3.45rem)!important;line-height:1.02!important;}
+  .hero-sub.hero-income-line{padding:14px 15px!important;font-size:.98rem!important;border-radius:18px!important;}
+  .hero-proof-row{gap:9px!important;margin-bottom:1.3rem!important;}
+  .hero-proof-row div{min-width:calc(50% - 8px)!important;padding:10px 8px!important;}
+  .hero-btns .btn-primary,.hero-btns .btn-ghost{width:100%!important;}
+  .hero-money{width:70px!important;height:70px!important;font-size:2.55rem!important;}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-premium-orbs:before,.hero-premium-orbs:after,.hero-money{animation:none!important;}
+}
+
 </style>
 </head>
 <body>
@@ -1577,6 +1765,11 @@ nav{background:rgba(18,0,24,.78)!important;border-bottom:1px solid rgba(255,255,
     <span class="hero-money">💸</span>
     <h1 class="hero-h1">Build Your AI + Instagram<br>Income System</h1>
     <p class="hero-sub hero-income-line">This mentorship is designed to help you build a ₹30K–₹1L/month income within 6 months—with consistent action and support.</p>
+    <div class="hero-proof-row" aria-label="Mentorship highlights">
+      <div><strong>6 Months</strong><span>Guided roadmap</span></div>
+      <div><strong>AI System</strong><span>Smart execution</span></div>
+      <div><strong>Growth</strong><span>Clear direction</span></div>
+    </div>
     <div class="hero-btns">
       <button class="btn-primary" onclick="openModal()">Claim Your Spot →</button>
       <button class="btn-ghost" onclick="document.getElementById('how').scrollIntoView({behavior:'smooth'})">See How It Works</button>
