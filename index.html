@@ -1732,6 +1732,95 @@ nav{background:rgba(18,0,24,.78)!important;border-bottom:1px solid rgba(255,255,
   .hero-premium-orbs:before,.hero-premium-orbs:after,.hero-money{animation:none!important;}
 }
 
+
+
+/* === FINAL HERO HEADLINE ATTRACTIVE PATCH === */
+.hero-h1-upgraded{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  gap:.26em!important;
+  line-height:.92!important;
+  margin-bottom:1.35rem!important;
+  color:#ffffff!important;
+  -webkit-text-fill-color:#ffffff!important;
+  background:none!important;
+  filter:none!important;
+  text-shadow:0 18px 55px rgba(0,0,0,.68),0 0 34px rgba(164,73,187,.45)!important;
+}
+.hero-h1-upgraded span{display:block!important;}
+.hero-line-1{
+  font-size:.72em!important;
+  letter-spacing:-.04em!important;
+  opacity:.98!important;
+}
+.hero-line-2{
+  font-size:.64em!important;
+  letter-spacing:-.035em!important;
+  color:rgba(255,255,255,.92)!important;
+  -webkit-text-fill-color:rgba(255,255,255,.92)!important;
+}
+.hero-highlight-3d{
+  position:relative!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  padding:.08em .28em .13em!important;
+  border-radius:.24em!important;
+  color:#ffffff!important;
+  -webkit-text-fill-color:#ffffff!important;
+  background:linear-gradient(135deg,#a449bb 0%,#c96ad9 54%,#ffffff 150%)!important;
+  box-shadow:0 20px 65px rgba(164,73,187,.46), inset 0 1px 0 rgba(255,255,255,.36), inset 0 -10px 24px rgba(91,20,111,.24)!important;
+  transform:perspective(900px) rotateX(3deg)!important;
+  text-shadow:0 5px 18px rgba(0,0,0,.34)!important;
+}
+.hero-highlight-3d::before{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  border-radius:inherit;
+  background:linear-gradient(135deg,rgba(255,255,255,.65),rgba(164,73,187,.08),rgba(255,255,255,.25));
+  opacity:.72;
+  pointer-events:none;
+  mix-blend-mode:soft-light;
+}
+.hero-highlight-3d::after{
+  content:"";
+  position:absolute;
+  left:12%;right:12%;bottom:-.16em;height:.10em;
+  border-radius:999px;
+  background:rgba(255,255,255,.82);
+  box-shadow:0 0 26px rgba(255,255,255,.58),0 0 42px rgba(164,73,187,.55);
+  pointer-events:none;
+}
+.hero-income-line{
+  max-width:760px!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  font-size:clamp(1rem,2vw,1.24rem)!important;
+  color:rgba(255,255,255,.92)!important;
+  text-shadow:0 8px 28px rgba(0,0,0,.55)!important;
+}
+#hero::after{
+  content:"";
+  position:absolute;
+  left:50%;top:56%;
+  width:min(900px,94vw);height:min(340px,42vw);
+  transform:translate(-50%,-50%) perspective(900px) rotateX(68deg);
+  background:radial-gradient(ellipse at center,rgba(255,255,255,.14),rgba(164,73,187,.28) 32%,transparent 70%);
+  filter:blur(20px);
+  z-index:1;
+  pointer-events:none;
+}
+.hero-content{position:relative!important;z-index:6!important;}
+@media(max-width:760px){
+  .hero-h1-upgraded{gap:.18em!important;line-height:1.02!important;}
+  .hero-line-1{font-size:.78em!important;}
+  .hero-highlight-3d{font-size:.86em!important;border-radius:.28em!important;padding:.1em .22em .14em!important;}
+  .hero-line-2{font-size:.7em!important;}
+  .hero-income-line{font-size:.98rem!important;max-width:94vw!important;}
+}
+
 </style>
 </head>
 <body>
@@ -1763,7 +1852,11 @@ nav{background:rgba(18,0,24,.78)!important;border-bottom:1px solid rgba(255,255,
       6-Month Mentorship — Limited Seats
     </div>
     <span class="hero-money">💸</span>
-    <h1 class="hero-h1">Build Your AI + Instagram<br>Income System</h1>
+    <h1 class="hero-h1 hero-h1-upgraded">
+      <span class="hero-line-1">Unlock Your</span>
+      <span class="hero-highlight-3d">Next-Level Growth</span>
+      <span class="hero-line-2">With AI + Instagram</span>
+    </h1>
     <p class="hero-sub hero-income-line">This mentorship is designed to help you build a ₹30K–₹1L/month income within 6 months—with consistent action and support.</p>
     <div class="hero-proof-row" aria-label="Mentorship highlights">
       <div><strong>6 Months</strong><span>Guided roadmap</span></div>
