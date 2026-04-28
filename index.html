@@ -272,6 +272,116 @@ section{
 .video-meta h3,.video-meta p{color:#000!important;}
 .founder-badge strong,.founder-badge span{color:#000!important;}
 .founder-content p{color:#000!important;}
+
+
+/* ===== GUARANTEE SECTION DESIGN ===== */
+.guarantee-section{
+  position:relative;
+  padding:26px 0 78px!important;
+}
+.guarantee-box{
+  position:relative;
+  overflow:hidden;
+  border-radius:34px;
+  padding:34px;
+  display:grid;
+  grid-template-columns:1fr .8fr;
+  gap:28px;
+  align-items:center;
+  background:linear-gradient(135deg,#ffffff 0%,#fbf7ff 48%,#f2e7ff 100%);
+  border:1px solid rgba(139,92,246,.20);
+  box-shadow:0 22px 70px rgba(80,35,130,.12);
+}
+.guarantee-box::before{
+  content:"";
+  position:absolute;
+  width:360px;height:360px;
+  right:-130px;top:-140px;
+  background:radial-gradient(circle,rgba(217,70,239,.20),transparent 68%);
+  pointer-events:none;
+}
+.guarantee-kicker{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  width:max-content;
+  padding:9px 14px;
+  border-radius:999px;
+  background:#fff;
+  color:#6d28d9;
+  border:1px solid #eadcff;
+  font-weight:900;
+  font-size:13px;
+  box-shadow:0 10px 24px rgba(139,92,246,.08);
+  margin-bottom:16px;
+}
+.guarantee-box h2{
+  font-size:clamp(32px,4.6vw,56px);
+  line-height:1;
+  letter-spacing:-.055em;
+  color:#1f1235;
+  margin-bottom:14px;
+}
+.guarantee-box p{
+  color:#000!important;
+  font-size:17px;
+  max-width:680px;
+}
+.guarantee-points{
+  display:grid;
+  gap:12px;
+  margin-top:22px;
+}
+.guarantee-point{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  padding:14px 16px;
+  background:#fff;
+  border:1px solid #eadcff;
+  border-radius:18px;
+  color:#000;
+  box-shadow:0 10px 26px rgba(139,92,246,.08);
+}
+.guarantee-point b{color:#6d28d9}
+.guarantee-card{
+  position:relative;
+  z-index:1;
+  border-radius:28px;
+  padding:26px;
+  background:linear-gradient(135deg,#7c3aed,#d946ef);
+  color:#fff;
+  box-shadow:0 18px 48px rgba(124,58,237,.28);
+  text-align:center;
+}
+.guarantee-card .seal{
+  width:92px;height:92px;
+  display:grid;place-items:center;
+  margin:0 auto 16px;
+  border-radius:50%;
+  background:rgba(255,255,255,.18);
+  border:1px solid rgba(255,255,255,.32);
+  font-size:42px;
+}
+.guarantee-card h3{
+  font-size:28px;
+  line-height:1.05;
+  margin-bottom:10px;
+}
+.guarantee-card p{
+  color:rgba(255,255,255,.88)!important;
+  font-size:14px;
+}
+.guarantee-terms{
+  margin-top:14px;
+  font-size:12px!important;
+  color:#6f5d86!important;
+}
+@media(max-width:900px){
+  .guarantee-box{grid-template-columns:1fr;padding:24px;border-radius:26px;}
+  .guarantee-card{padding:22px;}
+}
+
 </style>
 </head>
 <body>
@@ -279,7 +389,7 @@ section{
   <nav class="nav">
     <div class="container nav-inner">
       <a href="#" class="brand"><span class="brand-logo">LG</span> Lokesh Growth Class</a>
-      <div class="nav-links"><a href="#system">System</a><a href="#founder">Founder</a><a href="#pricing">Price</a><a href="#feedback">Feedback</a><a href="#offer">Apply</a></div>
+      <div class="nav-links"><a href="#system">System</a><a href="#founder">Founder</a><a href="#pricing">Price</a><a href="#guarantee">Guarantee</a><a href="#feedback">Feedback</a><a href="#offer">Apply</a></div>
       <a class="btn btn-primary whatsapp-link" href="#">Apply Now</a>
     </div>
   </nav>
@@ -389,10 +499,32 @@ section{
           <div class="price-big">₹29,999</div>
           <div class="price-sub">One-time mentorship access fee</div>
           <a class="btn btn-primary whatsapp-link" style="width:100%" href="#">Apply for Mentorship →</a>
-          <p class="disclaimer">Results depend on effort, consistency and execution. No fixed earning guarantee.</p>
+          <p class="disclaimer">6-month action roadmap + 100% money-back guarantee. Results depend on your effort, consistency and execution.</p>
         </div>
       </div>
     </section>
+
+    <section class="container reveal guarantee-section" id="guarantee">
+      <div class="guarantee-box">
+        <div>
+          <div class="guarantee-kicker">💯 100% Money-Back Guarantee</div>
+          <h2>6-Month Money-Back Commitment</h2>
+          <p>Agar aap 6 months tak Lokesh Growth Class ki mentorship, weekly calls, tasks aur action roadmap sincerely follow karte ho, aur phir bhi aapko expected progress nahi milti, to aapko <strong>100% money-back guarantee</strong> di jayegi.</p>
+          <div class="guarantee-points">
+            <div class="guarantee-point"><span>✅</span><div><b>6-month action proof</b> ke basis par guarantee valid rahegi.</div></div>
+            <div class="guarantee-point"><span>✅</span><div><b>Weekly tasks + calls</b> follow karne wale serious students ke liye refund available hai.</div></div>
+            <div class="guarantee-point"><span>✅</span><div><b>100% refund</b> terms ke according genuine action-takers ko provide kiya jayega.</div></div>
+          </div>
+          <p class="guarantee-terms">*Terms apply. Ye mentorship income direction aur execution support ke liye hai. Results aapki consistency, effort, niche, execution aur market response par depend karte hain. Refund eligibility task-completion proof ke according review hogi.</p>
+        </div>
+        <div class="guarantee-card">
+          <div class="seal">🛡️</div>
+          <h3>100% Money-Back Promise</h3>
+          <p>Lokesh Nagar sir ka focus simple hai — clear roadmap, weekly execution aur serious students ke liye risk-free learning experience.</p>
+        </div>
+      </div>
+    </section>
+
 
     <section class="container reveal" id="offer">
       <div class="offer-wrap">
@@ -410,7 +542,7 @@ section{
           <p style="color:rgba(255,255,255,.72)">Mentorship Charge</p>
           <div class="price">₹29,999</div>
           <p class="price-note">Limited seats • Personal mentorship style training</p>
-          <p class="disclaimer">Note: Results depend on your effort, consistency and execution. No fixed earning guarantee.</p>
+          <p class="disclaimer">Note: 6-month action roadmap + 100% money-back guarantee. Results depend on your effort, consistency and execution.</p>
           <a class="btn btn-primary whatsapp-link" style="width:100%" href="#">Apply on WhatsApp →</a>
         </div>
       </div>
@@ -478,7 +610,7 @@ section{
       <button onclick="quickMsg('Main zero se start kar raha hu')">Zero se start</button>
       <button onclick="quickMsg('Mujhe Instagram growth chahiye')">Instagram Growth</button>
       <button onclick="quickMsg('AI tools kaise help karenge?')">AI Tools</button>
-      <button onclick="quickMsg('Mentorship price and details')">Mentorship Details</button>
+      <button onclick="quickMsg('Mentorship price guarantee and details')">Mentorship Details</button>
     </div>
     <div class="chat-input"><input id="chatInput" placeholder="Type your question..." onkeydown="if(event.key==='Enter')sendChat()"><button onclick="sendChat()">Send</button></div>
   </div>
@@ -525,7 +657,7 @@ section{
     function fallbackReply(t){
       t=t.toLowerCase();
       if(t.includes('price')||t.includes('charge')||t.includes('fee')||t.includes('details')||t.includes('mentorship')){
-        return 'Mentorship charge ₹29,999 hai. Isme AI tools, Instagram growth direction, roadmap, weekly calls aur guided support milta hai.<br><br><a href="'+WHATSAPP_LINK+'" target="_blank" style="color:#6d28d9;font-weight:900">WhatsApp par details lo →</a>';
+        return 'Mentorship charge ₹29,999 hai. Isme AI tools, Instagram growth direction, roadmap, weekly calls, guided support aur 6-month action support guarantee milti hai. Results effort aur consistency par depend karte hain.<br><br><a href="'+WHATSAPP_LINK+'" target="_blank" style="color:#6d28d9;font-weight:900">WhatsApp par details lo →</a>';
       }
       if(t.includes('instagram')||t.includes('reel')||t.includes('content')){
         return 'Instagram growth ke liye random posting nahi, clear content direction, profile setup, hooks, CTA aur follow-up system chahiye. Lokesh Nagar sir mentorship me ye step-by-step guide karte hain.<br><br><a href="'+WHATSAPP_LINK+'" target="_blank" style="color:#6d28d9;font-weight:900">WhatsApp par baat karo →</a>';
